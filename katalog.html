@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Katalog</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span>📚</span> BukuBagi
+        </div>
+        
+        <nav class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="donasi.html">Donasi</a>
+            <a href="katalog.html" class="aktif">Katalog</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="katalog-container">
+            <div class="kartu-buku">
+                <img src="image/laut.png" alt="Laut Bercerita">
+                <div class="isi-kartu">
+                    <div class="judul-katalog">
+                        <h3>Laut Bercerita</h3>
+                        <span class="badge tersedia">Tersedia</span>
+                    </div>
+                    <p class="penulis">Leila Chudori</p>
+                    <div class="label-tag">
+                        <span class="tag kondisi-baik">Sangat Baik</span>
+                        <span class="tag kategori">Fiksi</span>
+                    </div>
+                    <p class="donor">Donor: Maya</p>
+                    <button class="tombol-kartu btn-aktif">Klaim Buku</button>
+                </div>
+            </div>
+            
+            <div class="kartu-buku">
+                <img src="image/teras.png" alt="Filosofi Teras">
+                <div class="isi-kartu">
+                    <div class="judul-katalog">
+                        <h3>Filosofi Teras</h3>
+                        <span class="badge habis">Habis</span>
+                    </div>
+                    <p class="penulis">Henry Manampiring</p>
+                    <div class="label-tag">
+                        <span class="tag kondisi-baru">Baru</span>
+                        <span class="tag kategori">Non Fiksi</span>
+                    </div>
+                    <p class="donor">Donor: Budi</p>
+                    <button class="tombol-kartu btn-nonaktif">Tidak Tersedia</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

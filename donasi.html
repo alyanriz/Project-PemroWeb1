@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donasi</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span>📚</span> BukuBagi
+        </div>
+        
+        <nav class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="donasi.html" class="aktif">Donasi</a>
+            <a href="katalog.html">Katalog</a>
+        </nav>
+    </header>
+
+    <main class="form">
+        <div class="kartu-form">
+            <h2 class="judul-form">Formulir Donasi Buku</h2>
+            
+            <form action="#" method="get">
+                <div class="sub-judul">
+                    <span>👤</span> <h3>Informasi Pengguna</h3>
+                </div>
+                <div class="form-input">
+                    <label>Nama Lengkap *</label>
+                    <input type="text" placeholder="Masukkan nama lengkap Anda" required>
+                </div>
+                <div class="baris2">
+                    <div class="form-input">
+                        <label>Email *</label>
+                        <input type="email" placeholder="nama@gmail.com" required>
+                    </div>
+                    <div class="form-input">
+                        <label>No. Telepon *</label>
+                        <input type="tel" pattern="[0-9]{10,13}" placeholder="08123456789" required>
+                    </div>
+                </div>
+
+                <hr class="garis">
+
+                <div class="sub-judul">
+                    <span>📖</span> <h3>Informasi Buku</h3>
+                </div>
+                <div class="form-input">
+                    <label>Judul Buku *</label>
+                    <input type="text" placeholder="Masukkan judul buku" required>
+                </div>
+                <div class="form-input">
+                    <label>Penulis *</label>
+                    <input type="text" placeholder="Nama penulis" required>
+                </div>
+                <div class="baris3">
+                    <div class="form-input">
+                        <label>Kondisi Buku *</label>
+                        <select name="kondisi">
+                            <option value="baru">Baru</option>
+                            <option value="sangat_baik">Sangat Baik</option>
+                            <option value="baik">Baik</option>
+                            <option value="layak_baca">Layak Baca</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label>Kategori *</label>
+                        <select name="kategori">
+                            <option value="fiksi">Fiksi</option>
+                            <option value="non_fiksi">Non Fiksi</option>
+                            <option value="pelajaran">Pelajaran</option>
+                            <option value="anak">Buku Anak</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label>Jumlah *</label>
+                        <input type="number" min="1" value="1">
+                    </div>
+                </div>
+
+                <hr class="garis">
+
+                <div class="sub-judul">
+                    <span>📦</span> <h3>Metode Penyerahan</h3>
+                </div>
+                <div class="baris2">
+                    <label class="kotak-pilihan">
+                        <input type="radio" name="metode" value="kurir">
+                        Kirim via Kurir
+                    </label>
+                    <label class="kotak-pilihan">
+                        <input type="radio" name="metode" value="pickup">
+                        Pickup
+                    </label>
+                </div>
+                <div class="form-input-panjang">
+                    <label>Alamat Pengambilan *</label>
+                    <input type="text" placeholder="Masukkan alamat lengkap" required>
+                </div>
+
+                <hr class="garis">
+
+                <div class="sub-judul">
+                    <span>📄</span> <h3>Catatan Tambahan</h3>
+                </div>
+                <div class="form-input-panjang">
+                    <input type="text" placeholder="Tambahkan catatan jika diperlukan">
+                </div>
+
+                <button type="submit" class="tombol">Kirim Donasi</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

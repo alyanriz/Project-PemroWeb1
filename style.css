@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eff7f6;
+}
+
+/* header */
+.header {
+    background-color: #b1f6ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e2aac6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2b535a;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.menu a.aktif {
+    background-color: #78c0ce;
+    font-weight: bold;
+}
+
+/* hero */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 50px;
+    gap: 50px;
+}
+
+.gambar-kiri img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.teks-kanan {
+    max-width: 500px;
+}
+
+.teks-kanan h1 {
+    color: #2b535a;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.teks-kanan p {
+    color: #717a76;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.tombol-donasi {
+    display: inline-block;
+    background-color: #79dbed;
+    color: #2b535a;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* form */
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.kartu-form {
+    width: 100%;
+    max-width: 800px;
+    padding: 50px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 83px -35px rgba(0,0,0,0.75);
+}
+
+.judul-form {
+    text-align: center;
+    color: #2b535a;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 37px;
+}
+
+.sub-judul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2b535a;
+    margin-bottom: 25px;
+}
+
+.sub-judul h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.form-input {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-input-panjang {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-input label, .form-input-panjang label {
+    font-size: 20px;
+    color: #2b535a;
+}
+
+.form-input input, .form-input select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 1px solid #2a3f44;
+    border-radius: 36px;
+    background-color: transparent;
+    font-size: 17px;
+    color: #717a76;
+}
+
+.form-input-panjang input {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 1px solid #2a3f44;
+    border-radius: 36px;
+    background-color: transparent;
+    font-size: 17px;
+    color: #717a76;
+}
+
+.baris2 {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.baris3 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.garis {
+    margin: 30px 0px;
+    color: #717a76;
+}
+
+.kotak-pilihan {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #717a76;
+    border-radius: 12px;
+    color: #2b535a;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.kotak-pilihan:has(input:checked) {
+    border: 4px solid #79dbed;
+}
+
+.tombol {
+    display: block;
+    width: fit-content;
+    background-color: #79dbed;
+    color: #2b535a;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* katalog */
+.katalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.kartu-buku {
+    width: 320px;
+    background-color: #cbe7ec;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.kartu-buku img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.isi-kartu {
+    padding: 20px;
+}
+
+.judul-katalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.judul-katalog h3 {
+    margin: 0;
+    color: #2b535a;
+    font-size: 22px;
+}
+
+.penulis {
+    color: #2b535a;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.label-tag {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.badge, .tag {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tersedia { background-color: #92d96c; color: #1e4511; }
+.habis { background-color: #e56b6b; color: #521616; }
+.kondisi-baik { background-color: #92d96c; color: #1e4511; }
+.kondisi-baru { background-color: #b0a1e0; color: #302061; }
+.kategori { background-color: #79bcc9; color: #174b54; }
+
+.donor {
+    color: #2b535a;
+    margin-bottom: 15px;
+}
+
+.tombol-kartu {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-aktif {
+    color: #2b535a;
+    background-color: #79dbed;
+}
+
+.btn-nonaktif {
+    color: #2b535a;
+    background-color: #b0cfd5;
+    cursor: not-allowed;
+}
