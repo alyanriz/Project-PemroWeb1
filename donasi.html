@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Donasi</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <span>📚</span> BukuBagi
+    <nav class="navbar navbar-expand-lg header-custom py-3 px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#"><span>📚</span> BukuBagi</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2 menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link aktif" href="donasi.html">Donasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="katalog.html">Katalog</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        
-        <nav class="menu">
-            <a href="index.html">Beranda</a>
-            <a href="donasi.html" class="aktif">Donasi</a>
-            <a href="katalog.html">Katalog</a>
-        </nav>
-    </header>
+    </nav>
 
-    <main class="form">
+    <main class="container py-5 d-flex justify-content-center">
         <div class="kartu-form">
             <h2 class="judul-form">Formulir Donasi Buku</h2>
             
@@ -27,18 +41,18 @@
                 <div class="sub-judul">
                     <span>👤</span> <h3>Informasi Pengguna</h3>
                 </div>
-                <div class="form-input">
-                    <label>Nama Lengkap *</label>
-                    <input type="text" placeholder="Masukkan nama lengkap Anda" required>
+                <div class="mb-4 w-100">
+                    <label class="form-label form-label-custom">Nama Lengkap *</label>
+                    <input type="text" class="form-control form-control-custom" placeholder="Masukkan nama lengkap Anda" required>
                 </div>
-                <div class="baris2">
-                    <div class="form-input">
-                        <label>Email *</label>
-                        <input type="email" placeholder="nama@gmail.com" required>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label form-label-custom">Email *</label>
+                        <input type="email" class="form-control form-control-custom" placeholder="nama@gmail.com" required>
                     </div>
-                    <div class="form-input">
-                        <label>No. Telepon *</label>
-                        <input type="tel" pattern="[0-9]{10,13}" placeholder="08123456789" required>
+                    <div class="col-md-6">
+                        <label class="form-label form-label-custom">No. Telepon *</label>
+                        <input type="tel" class="form-control form-control-custom" placeholder="08123456789" required>
                     </div>
                 </div>
 
@@ -47,36 +61,37 @@
                 <div class="sub-judul">
                     <span>📖</span> <h3>Informasi Buku</h3>
                 </div>
-                <div class="form-input">
-                    <label>Judul Buku *</label>
-                    <input type="text" placeholder="Masukkan judul buku" required>
+                <div class="mb-4 w-100">
+                    <label class="form-label form-label-custom">Judul Buku *</label>
+                    <input type="text" class="form-control form-control-custom" placeholder="Masukkan judul buku" required>
                 </div>
-                <div class="form-input">
-                    <label>Penulis *</label>
-                    <input type="text" placeholder="Nama penulis" required>
+
+                <div class="mb-4 w-100">
+                    <label class="form-label form-label-custom">Penulis *</label>
+                    <input type="text" class="form-control form-control-custom" placeholder="Nama penulis" required>
                 </div>
-                <div class="baris3">
-                    <div class="form-input">
-                        <label>Kondisi Buku *</label>
-                        <select name="kondisi">
+                <div class="row g-3 mb-4">
+                    <div class="col-md-4">
+                        <label class="form-label form-label-custom">Kondisi Buku *</label>
+                        <select class="form-select form-control-custom" name="kondisi">
                             <option value="baru">Baru</option>
                             <option value="sangat_baik">Sangat Baik</option>
                             <option value="baik">Baik</option>
                             <option value="layak_baca">Layak Baca</option>
                         </select>
                     </div>
-                    <div class="form-input">
-                        <label>Kategori *</label>
-                        <select name="kategori">
+                    <div class="col-md-4">
+                        <label class="form-label form-label-custom">Kategori *</label>
+                        <select class="form-select form-control-custom" name="kategori">
                             <option value="fiksi">Fiksi</option>
                             <option value="non_fiksi">Non Fiksi</option>
                             <option value="pelajaran">Pelajaran</option>
                             <option value="anak">Buku Anak</option>
                         </select>
                     </div>
-                    <div class="form-input">
-                        <label>Jumlah *</label>
-                        <input type="number" min="1" value="1">
+                    <div class="col-md-4">
+                        <label class="form-label form-label-custom">Jumlah *</label>
+                        <input type="number" class="form-control form-control-custom" min="1" value="1">
                     </div>
                 </div>
 
@@ -85,19 +100,23 @@
                 <div class="sub-judul">
                     <span>📦</span> <h3>Metode Penyerahan</h3>
                 </div>
-                <div class="baris2">
-                    <label class="kotak-pilihan">
-                        <input type="radio" name="metode" value="kurir">
-                        Kirim via Kurir
-                    </label>
-                    <label class="kotak-pilihan">
-                        <input type="radio" name="metode" value="pickup">
-                        Pickup
-                    </label>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6 d-flex">
+                        <label class="kotak-pilihan w-100 m-0">
+                            <input type="radio" name="metode" value="kurir" class="form-check-input me-2">
+                            Kirim via Kurir
+                        </label>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <label class="kotak-pilihan w-100 m-0">
+                            <input type="radio" name="metode" value="pickup" class="form-check-input me-2">
+                            Pickup
+                        </label>
+                    </div>
                 </div>
-                <div class="form-input-panjang">
-                    <label>Alamat Pengambilan *</label>
-                    <input type="text" placeholder="Masukkan alamat lengkap" required>
+                <div class="mb-4">
+                    <label class="form-label form-label-custom">Alamat Pengambilan *</label>
+                    <textarea class="form-control form-control-custom" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
                 </div>
 
                 <hr class="garis">
@@ -105,15 +124,18 @@
                 <div class="sub-judul">
                     <span>📄</span> <h3>Catatan Tambahan</h3>
                 </div>
-                <div class="form-input-panjang">
-                    <input type="text" placeholder="Tambahkan catatan jika diperlukan">
+                <div class="mb-5">
+                    <textarea class="form-control form-control-custom" rows="3" placeholder="Tambahkan catatan jika diperlukan"></textarea>
                 </div>
 
-                <button type="submit" class="tombol">Kirim Donasi</button>
+                <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-custom px-5 py-3 fs-5">Kirim Donasi</button>
+                </div>
             </form>
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

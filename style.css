@@ -2,20 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 body {
     background-color: #eff7f6;
 }
 
-/* header */
-.header {
-    background-color: #b1f6ed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+/* navbar */
+.header-custom {
+    background-color: #b1f6ed !important;
 }
 
 .logo {
@@ -27,68 +23,34 @@ body {
     gap: 10px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #2b535a;
-    margin-left: 10px;
-    padding: 10px 20px;
+.menu .nav-link {
+    color: #2b535a !important;
+    padding: 8px 20px !important;
     border-radius: 25px;
 }
 
-.menu a.aktif {
+.menu .nav-link:hover, .menu .nav-link.aktif {
     background-color: #78c0ce;
     font-weight: bold;
 }
 
-/* hero */
-.hero {
-    display: flex;
-    align-items: center;
-    padding: 60px 50px;
-    gap: 50px;
-}
-
-.gambar-kiri img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
-}
-
-.teks-kanan {
-    max-width: 500px;
-}
-
-.teks-kanan h1 {
-    color: #2b535a;
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-.teks-kanan p {
-    color: #717a76;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    font-size: 22px;
-}
-
-.tombol-donasi {
+/* button */
+.btn-custom {
     display: inline-block;
-    background-color: #79dbed;
-    color: #2b535a;
+    background-color: #79dbed !important;
+    color: #2b535a !important;
     text-decoration: none;
     padding: 15px 30px;
-    border-radius: 30px;
-    font-weight: bold;
+    border-radius: 30px !important;
+    font-weight: bold !important;
     font-size: 17px;
 }
 
-/* form */
-.form {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+.tombol-donasi:hover {
+    background-color: #5ecad4 !important;
 }
 
+/* form */
 .kartu-form {
     width: 100%;
     max-width: 800px;
@@ -119,61 +81,21 @@ body {
     font-weight: 500;
 }
 
-.form-input {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 25px;
-}
-
-.form-input-panjang {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 25px;
-}
-
-.form-input label, .form-input-panjang label {
-    font-size: 20px;
+.form-label-custom {
+    font-size: 18px;
     color: #2b535a;
 }
 
-.form-input input, .form-input select {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px 20px;
-    border: 1px solid #2a3f44;
-    border-radius: 36px;
-    background-color: transparent;
-    font-size: 17px;
-    color: #717a76;
+.form-control-custom {
+    border-radius: 36px !important;
+    border: 1px solid #2a3f44 !important;
+    padding: 12px 20px !important;
+    background-color: transparent !important;
 }
 
-.form-input-panjang input {
-    width: 100%;
-    height: 150px;
-    box-sizing: border-box;
-    padding: 15px 20px;
-    border: 1px solid #2a3f44;
-    border-radius: 36px;
-    background-color: transparent;
-    font-size: 17px;
-    color: #717a76;
-}
-
-.baris2 {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    justify-content: center;
-}
-
-.baris3 {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+.form-control-custom:focus {
+    box-shadow: 0 0 0 0.25rem rgba(121, 219, 237, 0.25) !important;
+    border-color: #2b535a !important;
 }
 
 .garis {
@@ -198,45 +120,11 @@ body {
     border: 4px solid #79dbed;
 }
 
-.tombol {
-    display: block;
-    width: fit-content;
-    background-color: #79dbed;
-    color: #2b535a;
-    text-decoration: none;
-    padding: 15px 30px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 17px;
-}
-
 /* katalog */
-.katalog-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.kartu-buku {
-    width: 320px;
-    background-color: #cbe7ec;
-    border-radius: 36px;
+.card-custom {
+    background-color: #cbe7ec !important;
+    border-radius: 25px !important;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.kartu-buku img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.isi-kartu {
-    padding: 20px;
 }
 
 .judul-katalog {
@@ -297,7 +185,10 @@ body {
 }
 
 .btn-nonaktif {
-    color: #2b535a;
-    background-color: #b0cfd5;
-    cursor: not-allowed;
+    background-color: #b0cfd5 !important;
+    color: #2b535a !important;
+    font-weight: bold !important;
+    border: none !important;
+    cursor: not-allowed !important;
+    padding: 12px !important; 
 }
